@@ -4,7 +4,7 @@ PRACTICE Exam 2, practice_problem 3.
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
          and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 # Students:
@@ -35,10 +35,10 @@ import rosegraphics as rg
 def main():
     """ Calls the   TEST   functions in this module. """
     run_test_practice_problem3a()
-    run_test_practice_problem3b()
-    run_test_practice_problem3c()
-    run_test_practice_problem3d()
-    run_test_practice_problem3e()
+    #run_test_practice_problem3b()
+    #run_test_practice_problem3c()
+    #run_test_practice_problem3d()
+    #run_test_practice_problem3e()
 
 
 def is_prime(n):
@@ -172,8 +172,12 @@ def practice_problem3a(circles):
     Type hints:
       :type sequence: [rg.Circle]
     """
+    total = 1
+    for k in range(len(circles)):
+        total = total * circles[k].center.x
+    return total
     ###########################################################################
-    # TODO: 2. Implement and test this function.
+    # Done: 2. Implement and test this function.
     #     The testing code is already written for you (above).
     ###########################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
